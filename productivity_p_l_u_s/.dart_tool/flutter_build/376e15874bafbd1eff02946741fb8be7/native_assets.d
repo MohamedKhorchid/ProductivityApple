@@ -1,0 +1,1 @@
+ C:\\Users\\Chick\\OneDrive\\ProductivityFINAL\\productivity_p_l_u_s\\.dart_tool\\flutter_build\\376e15874bafbd1eff02946741fb8be7\\native_assets.yaml: 
