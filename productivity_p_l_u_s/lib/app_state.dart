@@ -24,6 +24,12 @@ class FFAppState extends ChangeNotifier {
     _safeInit(() {
       _isDarkMode = prefs.getBool('ff_isDarkMode') ?? _isDarkMode;
     });
+    _safeInit(() {
+      _lastTimeNoteTodo = prefs.containsKey('ff_lastTimeNoteTodo')
+          ? DateTime.fromMillisecondsSinceEpoch(
+              prefs.getInt('ff_lastTimeNoteTodo')!)
+          : _lastTimeNoteTodo;
+    });
   }
 
   void update(VoidCallback callback) {
@@ -45,6 +51,15 @@ class FFAppState extends ChangeNotifier {
   set isDarkMode(bool value) {
     _isDarkMode = value;
     prefs.setBool('ff_isDarkMode', value);
+  }
+
+  DateTime? _lastTimeNoteTodo;
+  DateTime? get lastTimeNoteTodo => _lastTimeNoteTodo;
+  set lastTimeNoteTodo(DateTime? value) {
+    _lastTimeNoteTodo = value;
+    value != null
+        ? prefs.setInt('ff_lastTimeNoteTodo', value.millisecondsSinceEpoch)
+        : prefs.remove('ff_lastTimeNoteTodo');
   }
 }
 

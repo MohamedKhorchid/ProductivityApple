@@ -105,6 +105,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               collectionNamePath: ['tasks'],
             ),
           ),
+        ),
+        FFRoute(
+          name: 'notationPage',
+          path: '/notationPage',
+          builder: (context, params) => NotationPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

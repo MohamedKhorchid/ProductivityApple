@@ -34,7 +34,7 @@ if (keystorePropertiesFile.exists()) {
 android {
     compileSdkVersion 34
     namespace 'com.mycompany.productivityplus'
-
+    
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17  // Utiliser Java 21
         targetCompatibility JavaVersion.VERSION_17  // Utiliser Java 21
@@ -43,7 +43,6 @@ android {
     kotlinOptions {
         jvmTarget = "17"  // Utiliser Java 21 pour Kotlin aussi
     }
-    
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -59,15 +58,15 @@ android {
         applicationId "com.mycompany.productivityplus"
         minSdkVersion 23
         targetSdkVersion 34
-        versionCode 5
-        versionName "1.0.4"
+        versionCode 20
+        versionName "20.0.0"
     }
 
    signingConfigs {
        release {
            keyAlias 'my-key-alias'
            keyPassword 'testtodo'
-           storeFile file('C:/Users/Chick/OneDrive/Productivity+corrige/productivity_p_l_u_s/android/app/my-release-key.jks')
+           storeFile file('C:/Users/Chick/OneDrive/Applications/Apple/ProductivityApple/productivity_p_l_u_s/android/app/my-release-key.jks')
            storePassword 'testtodo'
            storeType 'pkcs12'
        }

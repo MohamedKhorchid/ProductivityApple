@@ -82,7 +82,9 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
             },
           ),
           title: Text(
-            'Modifier la Tâche',
+            FFLocalizations.of(context).getText(
+              'vr73um1x' /* Modifier la Tâche */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Inter Tight',
                   color: Colors.white,
@@ -102,7 +104,8 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   FlutterFlowAdBanner(
-                    height: 30.0,
+                    width: 320.0,
+                    height: 50.0,
                     showsTestAd: false,
                     iOSAdUnitID: 'ca-app-pub-5902757634604822/4496260779',
                     androidAdUnitID: 'ca-app-pub-5902757634604822/5124608864',
@@ -129,7 +132,9 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Text(
-                                'Détails de la tâche',
+                                FFLocalizations.of(context).getText(
+                                  'xyzxjk0j' /* Détails de la tâche */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
@@ -138,7 +143,9 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                                     ),
                               ),
                               Text(
-                                'Modifiez le titre ou la description',
+                                FFLocalizations.of(context).getText(
+                                  'lusjeny8' /* Modifiez le titre ou la descri... */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
@@ -156,11 +163,16 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                                 autofocus: false,
                                 obscureText: false,
                                 decoration: InputDecoration(
-                                  labelText: 'Titre de la tâche',
+                                  labelText:
+                                      FFLocalizations.of(context).getText(
+                                    'rkpronjw' /* Titre de la tâche */,
+                                  ),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Inter',
+                                        color:
+                                            FlutterFlowTheme.of(context).info,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
@@ -217,11 +229,16 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                                 autofocus: false,
                                 obscureText: false,
                                 decoration: InputDecoration(
-                                  labelText: 'Description',
+                                  labelText:
+                                      FFLocalizations.of(context).getText(
+                                    '0myvcxes' /* Description */,
+                                  ),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Inter',
+                                        color:
+                                            FlutterFlowTheme.of(context).info,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
@@ -279,7 +296,8 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                     ),
                   ),
                   FlutterFlowAdBanner(
-                    height: 30.0,
+                    width: 320.0,
+                    height: 50.0,
                     showsTestAd: false,
                     iOSAdUnitID: 'ca-app-pub-5902757634604822/6220405985',
                     androidAdUnitID: 'ca-app-pub-5902757634604822/9003880795',
@@ -306,7 +324,9 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Text(
-                                'Catégorie',
+                                FFLocalizations.of(context).getText(
+                                  'lgqosowt' /* Catégorie */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
@@ -315,7 +335,9 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                                     ),
                               ),
                               Text(
-                                'Modifiez la catégorie',
+                                FFLocalizations.of(context).getText(
+                                  '54w2kv9j' /* Modifiez la catégorie */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
@@ -329,12 +351,24 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                               ),
                               FlutterFlowChoiceChips(
                                 options: [
-                                  ChipData('Travail'),
-                                  ChipData('Personnel'),
-                                  ChipData('Santé'),
-                                  ChipData('Loisirs'),
-                                  ChipData('Études'),
-                                  ChipData('Autre')
+                                  ChipData(FFLocalizations.of(context).getText(
+                                    'kj636uqz' /* Travail */,
+                                  )),
+                                  ChipData(FFLocalizations.of(context).getText(
+                                    'bjffldql' /* Personnel */,
+                                  )),
+                                  ChipData(FFLocalizations.of(context).getText(
+                                    'jh4okrsr' /* Santé */,
+                                  )),
+                                  ChipData(FFLocalizations.of(context).getText(
+                                    'bl3pmw7c' /* Loisirs */,
+                                  )),
+                                  ChipData(FFLocalizations.of(context).getText(
+                                    '1fl1jcmt' /* Études */,
+                                  )),
+                                  ChipData(FFLocalizations.of(context).getText(
+                                    'oq7cshh0' /* Autre */,
+                                  ))
                                 ],
                                 onChanged: (val) => safeSetState(() =>
                                     _model.choiceChipsValue = val?.firstOrNull),
@@ -403,7 +437,9 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
 
                           context.pushNamed('PageAccueil');
                         },
-                        text: 'Enregistrer les modifications',
+                        text: FFLocalizations.of(context).getText(
+                          't9rgfni7' /* Enregistrer les modifications */,
+                        ),
                         options: FFButtonOptions(
                           width: MediaQuery.sizeOf(context).width * 0.8,
                           height: 56.0,
@@ -426,7 +462,8 @@ class _UpdateTaskWidgetState extends State<UpdateTaskWidget> {
                     ].divide(SizedBox(width: 20.0)),
                   ),
                   FlutterFlowAdBanner(
-                    height: 30.0,
+                    width: 320.0,
+                    height: 50.0,
                     showsTestAd: false,
                     iOSAdUnitID: 'ca-app-pub-5902757634604822/6345395037',
                     androidAdUnitID: 'ca-app-pub-5902757634604822/2626174704',

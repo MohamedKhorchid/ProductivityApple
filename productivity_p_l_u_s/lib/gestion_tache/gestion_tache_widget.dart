@@ -88,7 +88,9 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
             },
           ),
           title: Text(
-            'Nouvelle Tâche',
+            FFLocalizations.of(context).getText(
+              'cds9fzkg' /* Nouvelle Tâche */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Inter Tight',
                   color: Colors.white,
@@ -119,7 +121,8 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     FlutterFlowAdBanner(
-                                      height: 30.0,
+                                      width: 320.0,
+                                      height: 50.0,
                                       showsTestAd: false,
                                       iOSAdUnitID:
                                           'ca-app-pub-5902757634604822/7122424116',
@@ -154,7 +157,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Text(
-                                                  'Détails de la tâche',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'o1vmluq1' /* Détails de la tâche */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -165,7 +171,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  'Ajoutez un titre, une description ou les deux (obligatoire)',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'c30a9lhv' /* Ajoutez un titre, une descript... */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -194,12 +203,19 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     labelText:
-                                                        'Titre de la tâche',
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                      '9c9msy3f' /* Titre de la tâche */,
+                                                    ),
                                                     labelStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .info,
                                                           letterSpacing: 0.0,
                                                         ),
                                                     hintStyle: FlutterFlowTheme
@@ -261,6 +277,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                       .bodyLarge
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         letterSpacing: 0.0,
                                                       ),
                                                   minLines: 1,
@@ -282,12 +302,20 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                       TextInputAction.done,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
-                                                    labelText: 'Description',
+                                                    labelText:
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                      'g6njlfs2' /* Description */,
+                                                    ),
                                                     labelStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .info,
                                                           letterSpacing: 0.0,
                                                         ),
                                                     hintStyle: FlutterFlowTheme
@@ -349,6 +377,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                       .bodyLarge
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         letterSpacing: 0.0,
                                                       ),
                                                   maxLines: 3,
@@ -391,7 +423,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Text(
-                                                  'Date et Heure',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'h8sx47ka' /* Date et Heure */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -402,7 +437,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  'Choisissez un jour et une heure (obligatoire)',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'mvfqwnkp' /* Choisissez un jour et une heur... */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -604,13 +642,19 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                                       .min,
                                                               children: [
                                                                 Text(
-                                                                  'Sélectionner',
+                                                                  FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                    '964br6kd' /* Sélectionner */,
+                                                                  ),
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .info,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -632,7 +676,11 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                                           24.0,
                                                                     ),
                                                                     Text(
-                                                                      'Date et heure',
+                                                                      FFLocalizations.of(
+                                                                              context)
+                                                                          .getText(
+                                                                        'eqpcanhy' /* Date et heure */,
+                                                                      ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -673,7 +721,8 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                       ),
                                     ),
                                     FlutterFlowAdBanner(
-                                      height: 30.0,
+                                      width: 320.0,
+                                      height: 50.0,
                                       showsTestAd: false,
                                       iOSAdUnitID:
                                           'ca-app-pub-5902757634604822/8846569320',
@@ -708,7 +757,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Text(
-                                                  'Catégorie',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'f6r56f37' /* Catégorie */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -719,7 +771,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  'Choisissez une catégorie (facultatif)',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '32ynmbv3' /* Choisissez une catégorie (facu... */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .headlineSmall
@@ -736,12 +791,36 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                 ),
                                                 FlutterFlowChoiceChips(
                                                   options: [
-                                                    ChipData('Travail'),
-                                                    ChipData('Personnel'),
-                                                    ChipData('Santé'),
-                                                    ChipData('Loisirs'),
-                                                    ChipData('Études'),
-                                                    ChipData('Autre')
+                                                    ChipData(FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      'xlcta7zr' /* Travail */,
+                                                    )),
+                                                    ChipData(FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      'nl3p98i6' /* Personnel */,
+                                                    )),
+                                                    ChipData(FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      '3oyr85nw' /* Santé */,
+                                                    )),
+                                                    ChipData(FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      'umsfc4j8' /* Loisirs */,
+                                                    )),
+                                                    ChipData(FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      'l6pc01lh' /* Études */,
+                                                    )),
+                                                    ChipData(FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      'ql7ckgaq' /* Autre */,
+                                                    ))
                                                   ],
                                                   onChanged: (val) =>
                                                       safeSetState(() => _model
@@ -834,7 +913,10 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
 
                                           context.pushNamed('PageAccueil');
                                         },
-                                        text: 'Créer la tâche',
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          '08tnykub' /* Créer la tâche */,
+                                        ),
                                         options: FFButtonOptions(
                                           width:
                                               MediaQuery.sizeOf(context).width *
@@ -862,7 +944,8 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                       ),
                                     ),
                                     FlutterFlowAdBanner(
-                                      height: 30.0,
+                                      width: 320.0,
+                                      height: 50.0,
                                       showsTestAd: false,
                                       iOSAdUnitID:
                                           'ca-app-pub-5902757634604822/5809342443',

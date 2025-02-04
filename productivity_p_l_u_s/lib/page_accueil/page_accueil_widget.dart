@@ -1,6 +1,7 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_ad_banner.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -69,6 +70,10 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
       );
       _model.completedTasks = _model.complete!.length;
       safeSetState(() {});
+      if ((FFAppState().lastTimeNoteTodo == null) ||
+          (functions.daysSince(FFAppState().lastTimeNoteTodo!) >= 8)) {
+        context.pushNamed('notationPage');
+      }
     });
 
     _model.switchValue = false;
@@ -97,7 +102,9 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
           backgroundColor: Color(0xFFD090D4),
           automaticallyImplyLeading: false,
           title: Text(
-            'Aujourd\'hui...',
+            FFLocalizations.of(context).getText(
+              'xfjxt5wm' /* Aujourd'hui... */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Inter Tight',
                   color: Colors.white,
@@ -168,12 +175,39 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       FlutterFlowAdBanner(
-                                        height: 30.0,
+                                        width: 320.0,
+                                        height: 50.0,
                                         showsTestAd: false,
                                         iOSAdUnitID:
                                             'ca-app-pub-5902757634604822/3838914525',
                                         androidAdUnitID:
                                             'ca-app-pub-5902757634604822/4090649246',
+                                      ),
+                                      FlutterFlowLanguageSelector(
+                                        width: 200.0,
+                                        height: 40.0,
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondary,
+                                        borderColor: Colors.transparent,
+                                        dropdownIconColor: Colors.white,
+                                        borderRadius: 8.0,
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              color: Colors.white,
+                                              letterSpacing: 0.0,
+                                            ),
+                                        hideFlags: false,
+                                        flagSize: 24.0,
+                                        flagTextGap: 8.0,
+                                        currentLanguage:
+                                            FFLocalizations.of(context)
+                                                .languageCode,
+                                        languages: FFLocalizations.languages(),
+                                        onChanged: (lang) =>
+                                            setAppLanguage(context, lang),
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -218,7 +252,11 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Progression du jour',
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'n2ty6bht' /* Progression du jour */,
+                                                            ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .headlineSmall
@@ -520,7 +558,9 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                         ),
                                       ),
                                       Text(
-                                        'Tâches du jour',
+                                        FFLocalizations.of(context).getText(
+                                          'hy8dtv3v' /* Tâches du jour */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
@@ -889,7 +929,10 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                                                               .max,
                                                                       children: [
                                                                         Text(
-                                                                          'A effectuer le ',
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                            '2nx23pl7' /* A effectuer le  */,
+                                                                          ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodySmall
                                                                               .override(
@@ -916,7 +959,10 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                                                               ),
                                                                         ),
                                                                         Text(
-                                                                          ' à ',
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                            '63b0zxl3' /*  à  */,
+                                                                          ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
@@ -1036,7 +1082,8 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                         ),
                                       ),
                                       FlutterFlowAdBanner(
-                                        height: 30.0,
+                                        width: 320.0,
+                                        height: 50.0,
                                         showsTestAd: false,
                                         iOSAdUnitID:
                                             'ca-app-pub-5902757634604822/5638818021',
@@ -1044,7 +1091,9 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                             'ca-app-pub-5902757634604822/1121946379',
                                       ),
                                       Text(
-                                        'Terminées',
+                                        FFLocalizations.of(context).getText(
+                                          '9uaot6ik' /* Terminées */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
@@ -1292,7 +1341,10 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                                                               .max,
                                                                       children: [
                                                                         Text(
-                                                                          'A effectuer le ',
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                            'ouesz96l' /* A effectuer le  */,
+                                                                          ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodySmall
                                                                               .override(
@@ -1319,7 +1371,10 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                                                               ),
                                                                         ),
                                                                         Text(
-                                                                          ' à ',
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                            '6oj012cq' /*  à  */,
+                                                                          ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
@@ -1412,7 +1467,8 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                                         ),
                                       ),
                                       FlutterFlowAdBanner(
-                                        height: 30.0,
+                                        width: 320.0,
+                                        height: 50.0,
                                         showsTestAd: false,
                                         iOSAdUnitID:
                                             'ca-app-pub-5902757634604822/2472732660',
