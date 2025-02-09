@@ -154,32 +154,6 @@ class _NotationPageWidgetState extends State<NotationPageWidget> {
                       FFButtonWidget(
                         onPressed: () async {
                           await launchURL(
-                              'https://play.google.com/store/apps/details?id=com.mycompany.productivityplus');
-                        },
-                        text: FFLocalizations.of(context).getText(
-                          'wjsb6x6x' /* Noter sur Google Play Store */,
-                        ),
-                        options: FFButtonOptions(
-                          width: 250.0,
-                          height: 50.0,
-                          padding: EdgeInsets.all(8.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFD090D4),
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Inter Tight',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    letterSpacing: 0.0,
-                                  ),
-                          elevation: 0.0,
-                          borderRadius: BorderRadius.circular(25.0),
-                        ),
-                      ),
-                      FFButtonWidget(
-                        onPressed: () async {
-                          await launchURL(
                               'https://apps.apple.com/fr/app/to-do-list-minimaliste-fr/id6739429404');
                         },
                         text: FFLocalizations.of(context).getText(

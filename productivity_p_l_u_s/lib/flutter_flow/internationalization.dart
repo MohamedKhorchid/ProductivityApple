@@ -374,11 +374,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es':
           'Si te gusta nuestra aplicación, tómate un momento para calificarla. ¡Tu opinión importa y nos ayuda a mejorar este proyecto!',
     },
-    'wjsb6x6x': {
-      'fr': 'Noter sur Google Play Store',
-      'en': 'Rate on Google Play Store',
-      'es': 'Calificar en Google Play Store',
-    },
     'pel4xhu8': {
       'fr': 'Noter sur l\'App Store',
       'en': 'Rate on the App Store',
