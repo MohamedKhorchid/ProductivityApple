@@ -167,7 +167,7 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                       width: 320.0,
                       height: 50.0,
                       showsTestAd: false,
-                      iOSAdUnitID: 'ca-app-pub-5902757634604822/3838914525',
+                      iOSAdUnitID: 'ca-app-pub-5902757634604822/7976944396',
                       androidAdUnitID: 'ca-app-pub-5902757634604822/4090649246',
                     ),
                     FlutterFlowLanguageSelector(
@@ -973,7 +973,7 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                       width: 320.0,
                       height: 50.0,
                       showsTestAd: false,
-                      iOSAdUnitID: 'ca-app-pub-5902757634604822/5638818021',
+                      iOSAdUnitID: 'ca-app-pub-5902757634604822/6269681873',
                       androidAdUnitID: 'ca-app-pub-5902757634604822/1121946379',
                     ),
                     Text(
@@ -1366,7 +1366,7 @@ class _PageAccueilWidgetState extends State<PageAccueilWidget> {
                       width: 320.0,
                       height: 50.0,
                       showsTestAd: false,
-                      iOSAdUnitID: 'ca-app-pub-5902757634604822/2472732660',
+                      iOSAdUnitID: 'ca-app-pub-5902757634604822/8624382477',
                       androidAdUnitID: 'ca-app-pub-5902757634604822/2954667134',
                     ),
                   ].divide(SizedBox(height: 24.0)),
