@@ -612,6 +612,13 @@ class _GestionTacheWidgetState extends State<GestionTacheWidget> {
                                                                     .minute,
                                                               );
                                                             });
+                                                          } else if (_model
+                                                                  .datePicked !=
+                                                              null) {
+                                                            safeSetState(() {
+                                                              _model.datePicked =
+                                                                  getCurrentTimestamp;
+                                                            });
                                                           }
                                                         },
                                                         child: Container(

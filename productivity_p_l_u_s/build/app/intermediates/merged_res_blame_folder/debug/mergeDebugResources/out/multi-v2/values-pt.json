@@ -4,7 +4,7 @@
             "outputFile": "com.mycompany.productivityplus.app-mergeDebugResources-41:/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Chick\\.gradle\\caches\\transforms-4\\b5826ad1d777a0e278fa9ce715039650\\transformed\\appcompat-1.2.0\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\Chick\\.gradle\\caches\\transforms-4\\b099b336f712b27d9d243db5a4a75d4e\\transformed\\appcompat-1.2.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Chick\\.gradle\\caches\\transforms-4\\ac8c9e2263032f53eb536974dc1bccdc\\transformed\\browser-1.8.0\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\Chick\\.gradle\\caches\\transforms-4\\bfe7482b6e7ac371cf42332e0dbb118f\\transformed\\browser-1.8.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Chick\\.gradle\\caches\\transforms-4\\fd2b89822cf4ea012c319ed8d7a29b6d\\transformed\\core-1.13.1\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\Chick\\.gradle\\caches\\transforms-4\\8644f1464e67399aede6c2adde3cf986\\transformed\\core-1.13.1\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
